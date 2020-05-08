@@ -12,12 +12,5 @@ pipeline{
                 echo "Nothing to build for the moment."
             }
         }
-
-        stage('Flutter pubs'){
-            steps{
-                echo "pub hier.........."
-                sh flutterPath + " pub get"
-            }
-        }
     }
 }
