@@ -61,7 +61,9 @@ String format(DateTime date,
   final num years = days / 365;
 
   String result;
-  if (seconds < 45) {
+  if (seconds < 0){
+  result = 'FET';
+  } else if (seconds < 45) {
     result = messages.lessThanOneMinute(seconds.round());
   } else if (seconds < 90) {
     result = messages.aboutAMinute(minutes.round());

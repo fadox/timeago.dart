@@ -2,13 +2,13 @@ import 'package:timeago/src/messages/lookupmessages.dart';
 
 class ArMessages implements LookupMessages {
   @override
-  String prefixAgo() => '';
+  String prefixAgo() => 'منذ';
   @override
-  String prefixFromNow() => '';
+  String prefixFromNow() => 'بعد';
   @override
   String suffixAgo() => '';
   @override
-  String suffixFromNow() => 'من الآن';
+  String suffixFromNow() => '';
   @override
   String lessThanOneMinute(int seconds) => 'قبل ثواني';
   @override
@@ -16,16 +16,16 @@ class ArMessages implements LookupMessages {
   @override
   String minutes(int minutes) {
     if (minutes == 1) {
-      return 'منذ دقيقة';
+      return 'دقيقة';
     } else if (minutes == 2) {
-      return 'منذ دقيقتين';
+      return 'دقيقتين';
     } else if (minutes > 2 && minutes < 11) {
-      return ' منذ $minutes دقائق ';
+      return ' $minutes دقائق ';
     } else if (minutes > 10) {
-      return ' منذ $minutes دقيقة ';
+      return ' $minutes دقيقة ';
     }
 
-    return ' منذ $minutes دقائق ';
+    return ' $minutes دقائق ';
   }
 
   @override
@@ -33,16 +33,16 @@ class ArMessages implements LookupMessages {
   @override
   String hours(int hours) {
     if (hours == 1) {
-      return 'منذ ساعة';
+      return 'ساعة';
     } else if (hours == 2) {
-      return 'منذ ساعتين';
+      return 'ساعتين';
     } else if (hours > 2 && hours < 11) {
-      return ' منذ $hours ساعات ';
+      return ' $hours ساعات ';
     } else if (hours > 10) {
-      return ' منذ $hours ساعة ';
+      return ' $hours ساعة ';
     }
 
-    return ' منذ $hours ساعات ';
+    return ' $hours ساعات ';
   }
 
   @override
@@ -50,15 +50,15 @@ class ArMessages implements LookupMessages {
   @override
   String days(int days) {
     if (days == 1) {
-      return 'منذ يوم';
+      return 'يوم';
     } else if (days == 2) {
-      return 'منذ يومين';
+      return 'يومين';
     } else if (days > 2 && days < 11) {
-      return ' منذ $days ايام ';
+      return ' $days ايام ';
     } else if (days > 10) {
-      return ' منذ $days يوم ';
+      return ' $days يوم ';
     }
-    return ' منذ $days ايام ';
+    return ' $days ايام ';
   }
 
   @override
@@ -66,15 +66,15 @@ class ArMessages implements LookupMessages {
   @override
   String months(int months) {
     if (months == 1) {
-      return 'منذ شهر';
+      return 'شهر';
     } else if (months == 2) {
-      return 'منذ شهرين';
+      return 'شهرين';
     } else if (months > 2 && months < 11) {
-      return ' منذ $months اشهر ';
+      return ' $months اشهر ';
     } else if (months > 10) {
-      return ' منذ $months شهر ';
+      return ' $months شهر ';
     }
-    return ' منذ $months شهور ';
+    return ' $months شهور ';
   }
 
   @override
@@ -82,16 +82,16 @@ class ArMessages implements LookupMessages {
   @override
   String years(int years) {
     if (years == 1) {
-      return 'منذ سنة';
+      return 'سنة';
     } else if (years == 2) {
-      return 'منذ سنتين';
+      return 'سنتين';
     } else if (years > 2 && years < 11) {
-      return ' منذ $years سنوات ';
+      return ' $years سنوات ';
     } else if (years > 10) {
-      return ' منذ $years سنة ';
+      return ' $years سنة ';
     }
 
-    return ' منذ $years سنوات ';
+    return ' $years سنوات ';
   }
 
   @override
@@ -100,9 +100,9 @@ class ArMessages implements LookupMessages {
 
 class ArShortMessages implements LookupMessages {
   @override
-  String prefixAgo() => '';
+  String prefixAgo() => 'منذ';
   @override
-  String prefixFromNow() => '';
+  String prefixFromNow() => 'بعد';
   @override
   String suffixAgo() => '';
   @override
