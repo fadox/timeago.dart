@@ -62,7 +62,7 @@ class ArMessages implements LookupMessages {
   }
 
   @override
-  String aboutAMonth(int days) => 'قبل حوالي شهر';
+  String aboutAMonth(int days) => 'حوالي شهر';
   @override
   String months(int months) {
     if (months == 1) {
