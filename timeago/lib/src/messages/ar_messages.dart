@@ -2,7 +2,7 @@ import 'package:timeago/src/messages/lookupmessages.dart';
 
 class ArMessages implements LookupMessages {
   @override
-  String prefixAgo() => 'منذ';
+  String prefixAgo() => 'قبل';
   @override
   String prefixFromNow() => 'بعد';
   @override
@@ -10,9 +10,9 @@ class ArMessages implements LookupMessages {
   @override
   String suffixFromNow() => '';
   @override
-  String lessThanOneMinute(int seconds) => 'قبل ثواني';
+  String lessThanOneMinute(int seconds) => 'ثواني';
   @override
-  String aboutAMinute(int minutes) => 'قبل دقيقة';
+  String aboutAMinute(int minutes) => 'دقيقة';
   @override
   String minutes(int minutes) {
     if (minutes == 1) {
@@ -29,7 +29,7 @@ class ArMessages implements LookupMessages {
   }
 
   @override
-  String aboutAnHour(int minutes) => 'قبل حوالي الساعة';
+  String aboutAnHour(int minutes) => 'حوالي الساعة';
   @override
   String hours(int hours) {
     if (hours == 1) {
@@ -46,7 +46,7 @@ class ArMessages implements LookupMessages {
   }
 
   @override
-  String aDay(int hours) => 'قبل يوم';
+  String aDay(int hours) => 'يوم';
   @override
   String days(int days) {
     if (days == 1) {
@@ -78,7 +78,7 @@ class ArMessages implements LookupMessages {
   }
 
   @override
-  String aboutAYear(int year) => 'قبل سنة';
+  String aboutAYear(int year) => 'سنة';
   @override
   String years(int years) {
     if (years == 1) {
@@ -100,7 +100,7 @@ class ArMessages implements LookupMessages {
 
 class ArShortMessages implements LookupMessages {
   @override
-  String prefixAgo() => 'منذ';
+  String prefixAgo() => 'قبل';
   @override
   String prefixFromNow() => 'بعد';
   @override
